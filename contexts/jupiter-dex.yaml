@@ -1,0 +1,21 @@
+id: jupiter-dex-v4
+name: Jupiter Aggregator
+description: A liquidity aggregator for Solana that sources liquidity from various DEXes to provide the best swap rates
+type: dex
+capabilities:
+  - token_swaps
+  - route_optimization
+  - price_discovery
+  - slippage_protection
+endpoint: https://quote-api.jup.ag/v4
+pubkey: JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDD33WcGuJB
+authRequired: false
+schema:
+  swapQuote:
+    inputMint: string  # Token mint address
+    outputMint: string  # Token mint address
+    amount: string  # Amount as string with decimals
+    slippageBps: number  # Basis points for slippage tolerance
+  swap:
+    quoteResponse: object  # Response from the quote API
+    userPublicKey: string  # User wallet address

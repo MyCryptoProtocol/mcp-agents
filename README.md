@@ -30,6 +30,7 @@ npm test
 - `/.github` - CI/CD workflows
 
 ## Links
-- [Documentation](../mcp-docs)
-- [Core Protocol](../mcp-core)
-- [Examples](../mcp-examples)
+- [Documentation](https://github.com/MyCryptoProtocol/mcp-docs)
+- [Core Protocol](https://github.com/MyCryptoProtocol/mcp-core)
+- [Examples](https://github.com/MyCryptoProtocol/mcp-examples)
+- [Server](https://github.com/MyCryptoProtocol/mcp-server)

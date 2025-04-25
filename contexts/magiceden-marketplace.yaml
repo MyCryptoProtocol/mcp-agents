@@ -1,0 +1,23 @@
+id: magiceden-v2
+name: Magic Eden NFT Marketplace
+description: Leading NFT marketplace on Solana for trading collections and digital assets
+type: nft_marketplace
+capabilities:
+  - nft_listing
+  - nft_buying
+  - collection_tracking
+  - royalty_enforcement
+  - auction_support
+endpoint: https://api-mainnet.magiceden.io/v2
+pubkey: M2mx93ekt1fmXSVkTrUL9xVFHkmME8HTUi5Cyc5aF7K
+authRequired: false
+schema:
+  listing:
+    tokenMint: string  # NFT mint address
+    price: number  # Listing price in SOL
+    expiry: number  # Optional expiration timestamp
+  buying:
+    tokenMint: string  # NFT mint address
+    maxPrice: number  # Maximum price willing to pay in SOL
+  getCollectionStats:
+    symbol: string  # Collection symbol/ID
